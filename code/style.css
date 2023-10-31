@@ -1,0 +1,321 @@
+/* Font impoted from google : Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&family=Poppins:wght@400;700&display=swap");
+
+/* CSS Variables */
+:root {
+    --primery-yellow: #FFD60A;
+    --secondry-yellow: #FFC300;
+    --blue: #003566;
+    --dark-blue: #001D3D;
+    --black-blue: #000814;
+    --white: #fff;
+}
+
+/* CSS Genrel Rule */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-blue);
+}
+
+/* Container */
+.container {
+  color: var(--white);
+}
+
+/* Up arrow */
+div.up-arrow {
+  width: 5em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+  z-index: 1000;
+}
+div.up-arrow img {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: var(--blue);
+  height: 3.125em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-weight: 800;
+  font-style: italic;
+  padding: 14px;
+  color: var(--primery-yellow);
+}
+
+/* Nav Bar */
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav li {
+  padding: 0.875em;
+}
+.nav li a {
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+}
+.nav ul li a::after {
+  position: absolute;
+  z-index: 100;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--primery-yellow);
+  top: 100%;
+  left: 0;
+  transition: 0.7s;
+}
+.nav ul li a.active::after {
+  position: absolute;
+  z-index: 100;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--primery-yellow);
+  top: 100%;
+  left: 0;
+  transition: 0.7s;
+}
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Divider */
+hr {
+    padding: 2px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: var(--secondry-yellow);
+    border: none;
+}
+
+/* Section One */
+.section-1 {
+  margin: 0 auto;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.left-area,
+.right-area {
+  flex: 50%;
+  padding: 2em;
+}
+/* Left Area */
+.left-area img {
+  max-width: 20em;
+  clip-path: ellipse();
+  border: 4px solid var(--primery-yellow);
+  border-radius: 50%;
+  transition: all .7s;
+}
+.left-area img:hover {
+    transform: translate(25px);
+}
+/* Right Area */
+.right-area {
+    align-items: center;
+}
+.right-area-text {
+  width: 100%;
+    font-size: 1.125em;
+}
+.right-area-text h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+    transition: .8s;
+}
+.right-area-text h1:hover {
+    color: var(--primery-yellow);
+}
+.right-area-text p span{
+    position: relative;
+    transition: all .9s;
+}
+.right-area-text p span::after {
+  position: absolute;
+  z-index: 100;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--primery-yellow);
+  top: 100%;
+  left: 0;
+  transition: 0.7s;
+}
+.right-area-text p span:hover {
+    background-color: var(--secondry-yellow);
+    color: var(--black-blue);
+    font-size: 18px;
+}
+.right-area-text p span:hover::after {
+    width: 0%;
+}
+
+/* Cards */
+.card-container {
+    height: 100%;
+    background-color: var(--primery-yellow);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5625em;
+}
+.card {
+    width: 33%;
+    color: var(--black-blue);
+    background-color: var(--white);
+    margin: 0.625em 0.625em;
+    padding: 0.625em 0.9375em;
+    border-radius: 10px;
+}
+div.card-image {
+    width: 100%;
+    height: 11.25em;
+    border-radius: 10px;
+
+    /* Temp */
+    color: var(--white);
+    text-align: center;
+}
+div.card-image img {
+  width: 9em;
+}
+.card-text {
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.card-text h3 {
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+.card-text h3::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: var(--primery-yellow);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.card {
+  transition: all .7s;
+}
+.card:hover {
+  transform: scale(1.1);
+  background-color: var(--black-blue);
+}
+.card:hover .card-text h3, .card:hover .card-text p{
+  color: white;
+}
+
+/* Section Three */
+.section-3 {
+    background-color: var(--blue);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 800ms;
+}
+/* About */
+.about {
+    height: 100%;
+    width: 55%;
+    /* margin: auto; */
+    text-align: center;
+    position: relative;
+    transition: all .7s;
+}
+.about-text {
+  position: absolute;
+  top: 25%;
+  transition: 1200ms;
+}
+.about-image img{
+  border-radius: 15px;
+  border: 5px solid var(--blue);
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: 1500ms;
+}
+.section-3:hover .about-image img {
+  opacity: 1;
+}
+.section-3:hover .about-text {
+  opacity: 0;
+}
+.section-3:hover{
+  background-color: var(--primery-yellow);
+}
+
+/* Section Four */
+.section-4 {
+    /* height: 12.5em; */
+    text-align: center;
+    font-size: 1.5em;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* Socials */
+.social {
+  width: 10em;
+  display: flex;
+}
+.social a {
+  margin: 10px;
+  width: 100%;
+}
+.social a img {
+  width: 100%;
+}
+
+/* Some basic media queries.  */
+@media screen and (max-width: 764px) {
+  .section-1 {
+    flex-direction: column;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .right-area-text h1 {
+    font-size: 1em;
+  }
+  .about-text {
+    top: 0;
+    font-size: 1em;
+  }
+}

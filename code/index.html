@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- A Container Which Will Difne A Width -->
+    <div class="container">
+      <div class="up-arrow" id="scrollToTopButton">
+        <img src="../Images/up-arrow.png" alt="Up Arrow">
+      </div>
+      <!-- Head of the web page -->
+      <header class="header">
+        <!-- Brand Logo -->
+        <div class="logo">LOGO.</div>
+        <!-- Navigation Bar -->
+        <nav class="nav">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- A main section in body -->
+      <section class="section section-1">
+        <div class="left-area">
+          <img
+            src="../Images/Client-profile-removebg-preview.png"
+            alt="A 20 Years Old Man."
+          />
+        </div>
+        <div class="right-area">
+          <div class="right-area-text">
+            <h1>Professional Content-Creator.</h1>
+            <p>
+              A <span>creative</span> content creator crafts compelling,
+              innovative, and engaging content, utilizing storytelling, visuals,
+              and language to captivate and inform <span>audiences</span> across
+              various platforms.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <!-- Another section with cards -->
+      <section class="section section-2">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image">
+              <img src="../Images/design-thinking.png" alt="">
+            </div>
+            <div class="card-text">
+            <h3>Creative Mind</h3>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, corrupti? Blanditiis fuga libero dolorum unde eligendi a et corrupti alias.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="../Images/growth-icon.png" alt="">
+            </div>
+            <div class="card-text">
+            <h3>Ahievement</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eius quam voluptas in provident architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa optio alias fugiat explicabo vitae quidem corporis, nulla illo accusantium.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="../Images/Skills-icon.png" alt="">
+            </div>
+            <div class="card-text">
+            <h3>Skills</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eligendi vitae voluptatum deserunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime rerum nesciunt sint voluptatum eos enim?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <!-- About section -->
+      <section class="section section-3">
+        <div class="about">
+        <div class="about-text">
+        <h2>About Owner</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non illum at, nostrum delectus cum. Possimus ullam odio, quis at eos recusandae similique eaque ex natus, saepe excepturi doloremque iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa optio alias fugiat explicabo vitae quidem corporis, nulla illo accusantium.</p>
+      </div>
+      <div class="about-image">
+        <img src="../Images/Client-profile.png" alt="" width="300px">
+      </div>
+    </div>
+      </section>
+      <!-- Footer -->
+      <section class="section section-4">
+        <footer class="footer">
+          <div class="logo">LOGO.</div>
+          <div class="social">
+            <a href="#"><img src="../Images/facebook.png" alt=""></a>
+            <a href="#"><img src="../Images/youtube.png" alt=""></a>
+            <a href="#"><img src="../Images/instagram.png" alt=""></a>
+            <a href="#"><img src="../Images/linkedin.png" alt=""></a>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <!-- Some script by ChatGPT -->
+    <script>
+      // Get a reference to the button element
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+      // Add a click event listener to the button
+      scrollToTopButton.addEventListener("click", function() {
+          // Scroll to the top of the page
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth" // Add smooth scrolling behavior
+          });
+      });
+  </script>
+
+  </body>
+</html>
